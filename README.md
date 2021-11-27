@@ -1,6 +1,6 @@
 # codeShare
 
-
+[Deployed Site](https://mdmcodeshare.herokuapp.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Table of Contents
@@ -8,10 +8,8 @@
 - [User Story](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
- -[link to Deployed](#link-to-deployed)
 - [Application Image](#application-image)
-- [Contributing](#contributing)
-- [Testing](#testing)
+- [Credits](#credits)
 - [Questions](#questions)
 
 
@@ -53,46 +51,35 @@ Then it is stored in the database, and displays on the homepage.
 
 ## Usage
 
+1. Once the site is loaded you will be able to view the homepage and current existing snippets
 
-/// to be added later once we have completed app 
+2. Navigate to the login page to login or sign up
 
+3. Navigate to My Page to add a new code snippet and view existing snippets.
 
+4. Clicking into snippets on your home page will bring up the function to add a comment, edit, or delete the snippet.
 
-
-
-
-## Link to Deployed 
-
-
-/// to be added later 
-
-
-
+5. Clicking into other users snippets on the homepage will allow you to leave a comment on their code
 
 
 ## Application Image 
 
+![Screenshot1](./assets/screenshot1.PNG)
+![Screenshot2](./assets/screenshot2.PNG)
+![Screenshot3](./assets/screenshot3.PNG)
+![Screenshot4](./assets/screenshot4.PNG)
 
-// to be added 
-
- 
- 
-
-## Credits
-
-If you want to contribute please create and issue or pull-request and I will get back to you as soon as possible.
 
 ## Questions
 
 If you have any questions feel free to contact us here:
 
  ##### Github: 
- 
+
+ [David Clegg](https://github.com/Cleggatron)
+ [Mel Jack](https://github.com/meljack1/)
 
  ##### Email: 
 
-
-
-
-## Testing
-
+david.robert.clegg@gmail.com
+mel.jack.developer@gmail.com
