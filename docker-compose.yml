@@ -1,0 +1,29 @@
+version: "1.2"
+services:
+  mongodb:
+    container_name: database
+    image: mongo
+    expose:
+      - "27017"
+    ports: 
+      - "27017:27017"
+    volumes: 
+      - api:/data/db
+  backend:
+    build: ./server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/server
+    depends_on:
+      - mongodb
+  frontend: 
+    build: ./client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/client
+    depends_on:
+      - backend
+volumes:
+  api:
