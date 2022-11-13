@@ -6,4 +6,4 @@ COPY package.json .
 COPY . .
 
 EXPOSE 3000
-ENTRYPOINT [ "npm", "run", "start-install" ]
+ENTRYPOINT [ "npm", "run", "startInstall" ]

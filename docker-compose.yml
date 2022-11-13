@@ -1,4 +1,4 @@
-version: "1.2"
+version: "3.8"
 services:
   mongodb:
     container_name: database
@@ -7,12 +7,14 @@ services:
       - "27017"
     ports: 
       - "27017:27017"
-    volumes: 
+    volumes:
       - api:/data/db
+
   backend:
     build: ./server
+    tty: true
     ports:
-      - "5000:5000"
+      - "3001:3001"
     volumes:
       - ./server:/server
     depends_on:
@@ -23,6 +25,8 @@ services:
       - "3000:3000"
     volumes:
       - ./client:/client
+    stdin_open: true
+    tty: true
     depends_on:
       - backend
 volumes:

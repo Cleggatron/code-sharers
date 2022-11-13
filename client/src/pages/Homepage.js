@@ -6,13 +6,15 @@ import { SNIPPETS } from '../utils/queries';
 import HomepageCard from "../components/HomepageCard";
 
 export default function Homepage() {
-    const { loading, data } = useQuery(SNIPPETS, {
+    const { isLoading, data } = useQuery(SNIPPETS, {
         fetchPolicy: "no-cache"
     });
 
-    const snippetList = data?.snippets || [];
+    console.log(data)
 
-  return (loading) ? (
+    const snippetList = data ? data.snippets : [];
+
+  return (isLoading) ? (
     <Container sx={{ textAlign: "center", borderLeft: 1, borderRight: 1, pt: "calc(10vh + 64px)", backgroundColor: "white", minHeight: "100vh" }}>
       <CircularProgress />
     </Container>
